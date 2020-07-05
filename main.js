@@ -88,7 +88,6 @@ class bankAccount{
   }
     } 
     
-    
   }
   let acnumber1 = new bankAccount ('53174600','John Doe');
   let savingacc1 = new savingAccount ('531744000','Will simth',1/100);
@@ -99,7 +98,7 @@ class bankAccount{
   acnumber1.charge("target",1000) // not allowed to charge the amount greater than the balance
   console.log(`your checking account balance is ${acnumber1.balance()}`);
   console.log(savingacc1.accountNumber)// saving account
-  console.log(savingacc1.owner)
+  console.log(savingacc1.owner) 
   savingacc1.deposit(80)
   console.log(`Your saving account  balance is ${savingacc1.balance()}`)
   console.log(`The accrueInterest is ${savingacc1.accrueInterest()}`) 
